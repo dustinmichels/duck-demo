@@ -31,3 +31,16 @@ FROM buildings
 GROUP BY class
 ORDER BY n DESC
 LIMIT 10;
+
+-- Save for GeoLibre: each footprint with its type and area, as GeoParquet (lon/lat).
+COPY (
+  SELECT
+    id,
+    name,
+    class,
+    height,
+    round(ST_Area(ST_Transform(geometry, 'EPSG:26986', always_xy := true))) AS footprint_m2,
+    geometry
+  FROM buildings
+) TO 'buildings.parquet' (FORMAT parquet);
+-- GeoLibre: Add Data → GeoParquet Layer → buildings.parquet; colour by "class" or "footprint_m2".
