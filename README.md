@@ -8,9 +8,9 @@ Run with UI
 duckdb -ui
 ```
 
-Slideshow [here](https://docs.google.com/presentation/d/1nLLIsTeSjyvTeh2e05FMCBRmyVyQ_qqIr8toPBz76VQ/edit?usp=sharing)
+Run the code in [`sql/buildings.sql`](./sql/buildings.sql) block by block.
 
-Run the code in `sql/buildings.sql` block by block.
+> My slideshow [here](https://docs.google.com/presentation/d/1nLLIsTeSjyvTeh2e05FMCBRmyVyQ_qqIr8toPBz76VQ/edit?usp=sharing)
 
 ## Data & Tools
 
