@@ -1,14 +1,14 @@
 # README
 
-[Download DuckDB](https://duckdb.org/docs/2.0/installation)
+1. [Download DuckDB](https://duckdb.org/docs/2.0/installation)
 
-Run with UI
+2. Run duckdb with UI
 
-```sh
-duckdb -ui
-```
+   ```sh
+   duckdb -ui
+   ```
 
-Run the code in [`sql/buildings.sql`](./sql/buildings.sql) block by block.
+3. Run the code in [`sql/buildings.sql`](./sql/buildings.sql) block by block.
 
 > My slideshow [here](https://docs.google.com/presentation/d/1nLLIsTeSjyvTeh2e05FMCBRmyVyQ_qqIr8toPBz76VQ/edit?usp=sharing)
 
